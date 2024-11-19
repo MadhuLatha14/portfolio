@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Welcome to My Portfolio</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="hero">
+        <div class="hero-content">
+            <h2>Hello, I'm <span>KODURU MADHU LATHA</span></h2>
+            <p>A passionate <strong>Computer Science student specialised with Data Science</strong> ready to build amazing things.</p>
+            <button onclick="scrollToSection('projects')">View My Work</button>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>
+            <a href="resume.pdf" target="_blank" style="text-decoration: none; color: inherit;">About Me</a>
+        </h2>
+        <p>
+            Hello! I am K. Madhu Latha, a dedicated Computer Science student with a passion for solving complex problems and creating intuitive, user-friendly experiences. I possess a diverse skill set that includes problem-solving, web development (HTML, CSS, JavaScript), programming (Java, Python), Generative AI, data analysis, and machine learning. Leveraging these skills, I have successfully built various projects and tools that showcase my technical expertise and creativity.
+
+
+            check out my <a href="resume.pdf" target="_blank" style="color: #4a90e2; text-decoration: underline;">resume</a>.
+        </p>
+    </section>
+    
+
+    <section id="projects">
+        <h2>My Projects</h2>
+        <div class="card-container">
+            <div class="card">
+                <img src="project2.png" alt="Project 1">
+                <h3>
+                    <a href="https://github.com/MadhuLatha14/examwise_summarisation_proj" target="_blank" style="text-decoration: none; color: inherit;">
+                        Exam-Wise Summarisation Tool
+                    </a>
+                </h3>
+                <p>
+                    Developed a web application that assists students in preparing for exams by providing concise summaries of relevant topics. 
+                    The tool leverages web scraping to extract educational content from websites like Javatpoint. Using SpaCy in Python, 
+                    the extracted text is processed and summarized into manageable, exam-focused information. The application is built 
+                    with Flask for seamless deployment, ensuring an intuitive and accessible user interface for end-users.
+                </p>
+            </div>
+            <div class="card">
+                <img src="project3.png" alt="Project 2">
+                <h3>
+                    <a href="https://github.com/MadhuLatha14/e-commerce-project" target="_blank" style="text-decoration: none; color: inherit;">
+                        E-Commerce Website
+                    </a>
+                </h3>
+                <p>Developed a full-stack e-commerce website that enables both buyers and sellers to interact with ease. The platform provides CRUD operations for sellers to manage product listings, while buyers can browse, add to cart, and place orders. The website is built using HTML, CSS, and JavaScript for the front end, with Java Servlets handling the backend logic for seamless user interactions. Data is managed through JDBC to communicate with a MySQL database, ensuring robust performance and smooth operation across the application.</p>
+            </div>
+        </div>
+    </section>
+    
+    
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 K.Madhu Latha. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
